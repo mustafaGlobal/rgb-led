@@ -25,5 +25,6 @@
 #define	IR_B11	    0xFFA956	//
 #define	IR_B12	    0xFF6996	//
 #define	IR_SMOOTH   0xFFE916	//
+#define IR_LONG_PRESS 0xFFFFFF //
 
 #endif

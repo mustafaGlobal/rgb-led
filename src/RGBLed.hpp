@@ -12,7 +12,11 @@ class RGBLed{
 
     void begin();
     void set_write( unsigned int* color , unsigned int bright = 8u );
-    void write( unsigned int bright = 8u );
+    void write( unsigned int bright );
+    void write();
+    void turn_on(){ on_off_state_ = true; }
+    void turn_off(){ on_off_state_ = false; }
+    bool getState(){ return on_off_state_; }
 
   private:
     unsigned int red_ = 255u;
@@ -24,6 +28,7 @@ class RGBLed{
     unsigned int pinBlue_;
 
     unsigned int bright_ = 8u;
+    bool on_off_state_ = true;
 };
 
 #endif
